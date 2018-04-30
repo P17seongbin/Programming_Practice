@@ -1,4 +1,0 @@
-﻿  ConsoleApplication1.cpp
-g:\programming practice\code jam\quad\r1\consoleapplication1\consoleapplication1\consoleapplication1.cpp(26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-g:\programming practice\code jam\quad\r1\consoleapplication1\consoleapplication1\consoleapplication1.cpp(58): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  ConsoleApplication1.vcxproj -> G:\Programming Practice\Code Jam\Quad\R1\ConsoleApplication1\Debug\ConsoleApplication1.exe
