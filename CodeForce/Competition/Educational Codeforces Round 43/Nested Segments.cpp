@@ -1,0 +1,63 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+bool sort_by_left(vector<int> l, vector<int> r)
+{
+    return l[0] < r[0];
+}
+
+bool divconq(vector<vector<int> > seq,int s,int e)
+{
+    if (e-s < 1)
+        return false;
+    int skip_index = e-s/2;
+
+    vector<int> eraser = seq[skip_index];
+
+    if (divconq(seq,s,(e-s)/2 - 1) || divconq(seq,(e-s)/2 + 1, e))
+        return true;
+    else
+    {
+        for (int i=s;i<skip_index;i++)
+        {
+            if(seq[i][1] >= eraser[1])
+            { 
+                cout << eraser[2] << " " << seq[i][2] << endl;
+                return true;
+            }
+        }
+        for (int i=skip_index+1;i <= e-s;i++)
+        {
+            if(seq[i][1] <= eraser[1])
+            {
+                cout << seq[i][2] << " " << eraser[2] << endl;
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    vector<vector<int> > seq(n);
+    for(int i=1;i<=n;i++)
+    {
+        int a,b;
+        cin >> a >> b;
+        seq[i-1].push_back(a);
+        seq[i-1].push_back(b);
+        seq[i-1].push_back(i);
+    }
+    sort(seq.begin(),seq.end(),sort_by_left);
+if (!divconq(seq,0,seq.size()-1))
+{
+    cout << "-1 -1" << endl;
+}
+return 0;
+}
