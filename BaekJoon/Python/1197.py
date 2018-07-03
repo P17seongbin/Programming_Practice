@@ -1,3 +1,5 @@
+#Minimal Spanning Tree
+
 def find(x):
     if par[x] == -1:
         return x

@@ -1,3 +1,5 @@
+#Simple
+
 def find(a,b):
     x=1
     for i in range(b):
