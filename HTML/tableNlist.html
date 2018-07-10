@@ -1,0 +1,80 @@
+<!-- exercise about table and list -->
+<!-- border-collapse attribute works on only <table> tag -->`
+<!DOCTYPE html>
+<html>
+	<head>
+<style>
+table,th,td{
+	border:1px solid black;
+}
+table#Ct{
+	border-collapse:collapse;
+}
+</style>
+	</head>
+	<body>
+		<!-- Decorated by CSS -->
+		<p> This is a basic table </p>
+		<table style = "width:100%">
+			<tr>
+				<!-- the difference between <th> and <td> is only style -->
+				<th>First</th>
+				<th>Second</th>
+				<th>Third</th>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+			</tr>
+			<tr>
+				<td>Alpha</td>
+				<td>Beta</td>
+				<td>Gamma</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+			</tr>
+		</table>
+		<p> This is a Collapsed border table </p>
+		<table style = "width:100%" id = "Ct">
+			<tr>
+                                <th id = "Ct">First</th>
+                                <th id = "Ct">Second</th>
+                                <th id = "Ct">Third</th>
+                        </tr>
+                        <tr>
+                                <td id = "Ct">A</td>
+                                <td id = "Ct">B</td>
+                                <td id = "Ct">C</td>
+                        </tr>
+                        <tr>
+                                <td id = "Ct">Alpha</td>
+                                <td id = "Ct">Beta</td>
+                                <td id = "Ct">Gamma</td>
+                        </tr>
+                        <tr>
+                                <td id = "Ct">a</td>
+                                <td id = "Ct">b</td>
+                                <td id = "Ct">c</td>
+                        </tr>
+		</table>
+		<p> This is a sigong </p>
+		<table style = "width:100%",id = "HoTS">
+			<tr>
+				<th colspan = "2"> </th>
+				<td rowspan = "2"> <td>
+			</tr>
+			<tr> 
+				<td rowspan = "2"> <td>
+						<td> <img src = "https://us.battle.net/forums/static/images/social-thumbs/heroes.png" width = "400" height = "400"> </td>
+			</tr>
+		<tr>
+				<th colspan = "2"> </th>
+			</tr>
+		</table>
+	</body>
+</html>
+
