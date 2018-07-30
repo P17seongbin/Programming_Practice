@@ -12,6 +12,8 @@ public:
 	int index;
 	int rank;
 	Vertex_Datum* parent;
+	vector<Edge_Datum* > connected;
+
 	void Init()
 	{
 		parent = this;
@@ -54,10 +56,30 @@ vector<Vertex_Datum> Vertex_Origin;
 
 bool Sort_By_Weight(Edge_Datum &l, Edge_Datum &r) { return l.weight < r.weight; }
 
-int Find_MinCut(Vertex_Datum* target)
+int Find_MinCut(Edge_Datum* target)
 {
-	
+	//그래프를 형성하고 Max Flow(Min Cut)를 찾아서 그 값을 저장한다.
+	int MinCut = 0;
+	int s = target->u->index;
+	int t = target->v->index;
+
+	vector<Vertex_Datum> Graph = Vertex_Origin.assign();
+	for (int i = 0; i < m; i++)
+	{
+		if (Edge_Origin[i].weight > target->weight)
+			break;
+		else if (target == &Edge_Origin[i])
+			continue;
+		Graph[Edge_Origin[i]->u->index].connected.push_back(&Edge_Origin[i]);
+		Graph[Edge_Origin[i]->v->index].connected.push_back(&Edge_Origin[i]);
+	}
+
+
+
+
+	//크기 리턴
 }
+
 
 
 void Prim()
