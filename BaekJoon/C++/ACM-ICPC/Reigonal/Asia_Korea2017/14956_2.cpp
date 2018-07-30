@@ -1,5 +1,6 @@
 //ACM-ICPC Regional - Daegeon 2017 problem E - Philosophes Walk
-//Math
+//Math(Hilbert Curve)
+//Solved!
 #include<iostream>
 
 
