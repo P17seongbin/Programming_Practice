@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\BaekJoon\C++\ACM-ICPC\Reigonal\Asia_Korea2017\14955.cpp">
+    <ClCompile Include="..\..\BaekJoon\C++\2250.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

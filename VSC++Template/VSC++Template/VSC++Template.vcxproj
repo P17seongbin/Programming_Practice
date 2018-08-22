@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\BaekJoon\C++\ACM-ICPC\Reigonal\Asia_Korea2017\14955.cpp" />
+    <ClCompile Include="..\..\BaekJoon\C++\2250.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
